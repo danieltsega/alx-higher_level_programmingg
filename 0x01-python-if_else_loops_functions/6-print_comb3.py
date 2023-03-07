@@ -5,4 +5,4 @@ for i in range(0, 9):
             continue
         elif i < j:
             print("{}{}, ".format(i, j), end="")
-print("{}{}".format(i, j))
+print("{}{} ".format(i, j))
