@@ -7,4 +7,4 @@ This project is done at **ALX-Full-Stack-Software-Engineering** Course in the ai
 ## Files
 
 ## Author
-**Project Done By: [@DannySanchez6658](https://github.com/DannySanchez6658)
+**Project Done By:** [@DannySanchez6658](https://github.com/DannySanchez6658)
