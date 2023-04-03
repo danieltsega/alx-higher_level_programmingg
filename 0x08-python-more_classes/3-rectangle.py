@@ -81,10 +81,10 @@ class Rectangle:
 
         rect = ""
         if self.width == 0 or self.height == 0:
-            return rec
+            return rect
 
         for i in range(self.height):
-            rec += ("#" * self.width)
+            rect += ("#" * self.width)
             print("\n")
 
-        return rec[1:-1]
+        return rect[1:-1]
