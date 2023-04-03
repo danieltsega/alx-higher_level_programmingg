@@ -4,7 +4,7 @@ This project is done in the aim of learning all about how **Exceptions** work in
 
 ## Technologies
 * **C** files are compiled with **gcc**
-* **Python** Scripts are written with **Python 3.4.3**
+* **Python** Scripts are written with **Python 3.8.5**
 * Tested on **UBUNTU 20.04 LTS**
 ## Files
 | Filename    |  Description     |
