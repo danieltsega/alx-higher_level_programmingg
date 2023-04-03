@@ -19,6 +19,8 @@ class Rectangle:
     @property
     def width(self):
         """A width getter function
+
+        Return: the width of the rectangle
         """
 
         return self.__width
@@ -37,6 +39,8 @@ class Rectangle:
     @property
     def height(self):
         """A height getter function
+
+        Return: the height of rectangle
         """
         return self.__height
 
@@ -54,6 +58,8 @@ class Rectangle:
     def area(self):
         """A function that returns the area of
         the rectangle object
+
+        Return: the area of the rectangle
         """
 
         return self.width * self.height
@@ -61,6 +67,8 @@ class Rectangle:
     def perimeter(self):
         """A function that returns the perimeter
         of the rectangle object
+
+        Return: the perimeter of the rectangle
         """
         
         if self.width == 0 or self.height == 0:
