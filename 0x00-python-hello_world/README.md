@@ -4,7 +4,7 @@ This is a project done one the introduction to **High-Level-Language** in **Pyth
 ## Technologies
 
 * Shell Files written in **Bash** Script
-* Python code written in **Python 3.4**
+* Python code written in **Python 3.8.5**
 * C files are compiled in **gcc**
 * Tested in **UBUNTU 20.04**
 
