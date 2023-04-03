@@ -95,4 +95,4 @@ class Rectangle:
                 the rectangle
         """
 
-        return f'Rectangle({self.width, self.height})'
+        return "Rectangle({:d},{:d})".format(self.width, sef.height)
