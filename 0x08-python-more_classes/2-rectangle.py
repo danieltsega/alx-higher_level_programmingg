@@ -56,12 +56,14 @@ class Rectangle:
         the rectangle object
         """
 
-        return self.__height * self.__width
+        return self.height * self.width
 
     def perimeter(self):
         """A function that returns the perimeter
         of the rectangle object
         """
         
-        p = 2 * (self.__height + self.__width)
-        return p
+        if self.width == 0 and self.height == 0:
+            return 0
+
+        return (2 * self.width) + (2 * self.height)
