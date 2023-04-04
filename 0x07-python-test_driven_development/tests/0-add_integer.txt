@@ -17,7 +17,12 @@ Adding 10 and 20:
 
 Adding 30 and a string:
 	>>> add_integer(30, "Danny")
-	Traceback (most recent call last)
+	Traceback (most recent call last):
 		...
 	TypeError: b must be an integer
 
+Adding a string and default value of b:
+	>>> add_integer("Tsega")
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
