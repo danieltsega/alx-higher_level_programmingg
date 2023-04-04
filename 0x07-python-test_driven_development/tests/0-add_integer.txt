@@ -26,3 +26,23 @@ Adding a string and default value of b:
 	Traceback (most recent call last):
 		...
 	TypeError: a must be an integer
+
+Passing a list to the function:
+	>>> add_integer([], [])
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+Passing tuples to the function:
+	>>> add_integer((1,2), (2,3))
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+Substracting 20 and 10:
+	>>> add_integer(20, -10)
+	10
+
+Adding two float numbers 30.5 and 60.7:
+	>>> add_integer(30.5, 60.7)
+	90
