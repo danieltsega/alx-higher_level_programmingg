@@ -1,0 +1,23 @@
+The ``0-add_integer`` module
+============================
+
+Using ``add_integer``
+---------------------
+
+Import the function:
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Adding 10.5 and default b:
+	>>> add_integer(10.5)
+	108
+
+Adding 10 and 20:
+	>>> add_integer(10, 20)
+	30
+
+Adding 30 and a string:
+	>>> add_integer(30, "Danny")
+	Traceback (most recent call last)
+		...
+	TypeError: b must be an integer
+
