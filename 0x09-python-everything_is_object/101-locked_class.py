@@ -3,4 +3,10 @@
 
 
 class LockedClass:
+    """ A class that has a
+    locked attribute
+    """
+
     __slots__ = "first_name"
+
+
