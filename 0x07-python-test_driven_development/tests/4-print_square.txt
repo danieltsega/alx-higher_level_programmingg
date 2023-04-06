@@ -19,3 +19,8 @@ Let's give it a proper value:
 	######
 	######
 
+Let's test it giving the size a float value:
+	>>> print_square(4.6)
+	Traceback (most recent call last):
+		...
+	TypeError: size must be an integer
