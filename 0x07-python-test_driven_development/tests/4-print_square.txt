@@ -28,4 +28,10 @@ Let's test it giving the size a float value:
 Let's test it giving the size a value of 0:
 	>>> print_square(0)
 	
+Let's test it giving the size no value:
+	>>> print_square()
+	Traceback (most recent call last):
+		...
+	TypeError: print_square() missing 1 required positional argument: 'size'
+
 
