@@ -1,0 +1,21 @@
+The ``print_square`` module
+===========================
+
+
+Using ``print_square``
+----------------------
+
+
+Let's import the module:
+	>>> print_square = __import__('4-print_square').print_square
+
+
+Let's give it a proper value:
+	>>> print_square(6)
+	######
+	######
+	######
+	######
+	######
+	######
+
