@@ -1,0 +1,14 @@
+The ``say_my_name`` module
+==========================
+
+Using ``say_my_name``
+---------------------
+
+
+Let's import the module:
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+
+Test it giving it a normal name:
+	>>> say_my_name("Danny", "Tsega")
+	My name is Danny Tsega
