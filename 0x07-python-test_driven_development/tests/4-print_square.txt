@@ -24,3 +24,8 @@ Let's test it giving the size a float value:
 	Traceback (most recent call last):
 		...
 	TypeError: size must be an integer
+
+Let's test it giving the size a value of 0:
+	>>> print_square(0)
+	
+
