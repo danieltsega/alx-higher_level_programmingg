@@ -8,4 +8,4 @@ This is a project done in the aim of learning about how everything in python cor
 * Tested on **UBUNTU 20.04 LTS**
 
 ## Author
-* **Project Done By:**
+* **Project Done By:** [Daniel Tsega](https://github.com/DannySanchez6658/)
