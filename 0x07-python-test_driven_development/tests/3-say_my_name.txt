@@ -12,3 +12,16 @@ Let's import the module:
 Test it giving it a normal name:
 	>>> say_my_name("Danny", "Tsega")
 	My name is Danny Tsega
+
+Test it giving the lastname an int value:
+	>>> say_my_name("Abrham", 12)
+	Traceback (most recent call last):
+		...
+	TypeError: last_name must be a string
+
+Test it giving the firstname an int value:
+	>>> say_my_name(72, "Tsega")
+	Traceback (most recent call last):
+		...
+	TypeError: first_name must be a string
+
