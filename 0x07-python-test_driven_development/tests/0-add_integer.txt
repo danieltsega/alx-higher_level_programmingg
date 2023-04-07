@@ -59,4 +59,10 @@ Let's try it by passing None:
 		...
 	TypeError: a must be an integer
 
+Let's add two string values:
+	>>> add_integer("Daniel", "Tsega")
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
 
