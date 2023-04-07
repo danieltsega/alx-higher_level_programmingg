@@ -46,3 +46,9 @@ Let's test it giving the characters:
 	>>> text_indentation("?")
 	?
 	<BLANKLINE>
+
+Let's test it giving new line character:
+	>>> text_indentation("\n")
+	<BLANKLINE>
+
+
