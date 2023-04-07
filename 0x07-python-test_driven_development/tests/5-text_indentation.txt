@@ -22,7 +22,7 @@ Let's test it normally:
 	<BLANKLINE>
 
 Let's test it using an integer value:
-	>>> text_indentation(10)
+	>>> text_indentation(22)
 	Traceback (most recent call last):
 		...
 	TypeError: text must be a string
@@ -39,5 +39,10 @@ Let's give it an empty value:
 		...
 	TypeError: text_indentation() missing 1 required positional argument: 'text'
 
-
-
+Let's test it giving an empty text:
+	>>> text_indentation("")
+	
+Let's test it giving the characters:
+	>>> text_indentation("?")
+	?
+	<BLANKLINE>
