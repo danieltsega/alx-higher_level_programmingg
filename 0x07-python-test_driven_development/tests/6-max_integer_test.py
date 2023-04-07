@@ -4,6 +4,7 @@
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
+
 class TestMaxInteger(unittest.TestCase):
     """Test for Normal cases"""
 
@@ -18,7 +19,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_negative(self):
         self.assertEqual(max_integer([-38, -44, -12, -57]), -12)
-    
+
     """Tests for Problematic conditions"""
 
     def test_tuple(self):
