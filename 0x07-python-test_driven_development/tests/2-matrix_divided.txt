@@ -50,6 +50,11 @@ Dividing matrix by matrix:
 
 Let's divide it by float number:
 	>>> matrix_divided([[1,2,3],[4,5,6]], 2.5)
-	[[0.4, 0.8, 1.2], [1.6, 2, 2.4]]
+	[[0.4, 0.8, 1.2], [1.6, 2.0, 2.4]]
 
-
+Let's divide it by a string:
+	>>> matrix_divided([[1,2,3],[4,5,6]], "dan")
+	Traceback (most recent call back):
+		...
+	TypeError: div must be a number
+	
