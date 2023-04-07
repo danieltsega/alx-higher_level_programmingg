@@ -1,0 +1,23 @@
+The ``text_indentation`` module
+===============================
+
+
+Using ``text_indentation``
+-------------------------
+
+
+Let's import the module:
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+Let's test it normally:
+	>>> text_indentation("""Hi my name is danny. how are you? can you show me this: stuff?""")
+	Hi my name is danny.
+	<BLANKLINE>
+	how are you?
+	<BLANKLINE>
+	can you show me this:
+	<BLANKLINE>
+	stuff?
+	<BLANKLINE>
+
