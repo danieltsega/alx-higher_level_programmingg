@@ -18,4 +18,17 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_negative(self):
         self.assertEqual(max_integer([-38, -44, -12, -57]), -12)
+    
+    """Tests for Problematic conditions"""
 
+    def test_tuple(self):
+        with self.assertRaises(TypeError):
+            max_integer([5, (3, 4)])
+
+    def test_integer(self):
+        with self.assertRaises(TypeError):
+            max_integer(4)
+
+    def test_string(self):
+        with self.assertRaises(TypeError):
+            max_integer([5, 'Danny'])
