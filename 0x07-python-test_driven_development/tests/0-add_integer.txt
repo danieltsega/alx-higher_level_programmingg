@@ -53,3 +53,10 @@ Let's try it by giving an empty value to the function:
 		...
 	TypeError: add_integer() missing 1 required positional argument: 'a'
 
+Let's try it by passing None:
+	>>> add_integer(None)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+
