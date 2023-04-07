@@ -46,3 +46,10 @@ Substracting 20 and 10:
 Adding two float numbers 30.5 and 60.7:
 	>>> add_integer(30.5, 60.7)
 	90
+
+Let's try it by giving an empty value to the function:
+	>>> add_integer()
+	Traceback (most recent call last):
+		...
+	TypeError: add_integer() missing 1 required positional argument: 'a'
+
