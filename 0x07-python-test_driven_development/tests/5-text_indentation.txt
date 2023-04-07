@@ -49,6 +49,6 @@ Let's test it giving the characters:
 
 Let's test it giving new line character:
 	>>> text_indentation("\n")
-	<BLANKLINE>
+	
 
 
