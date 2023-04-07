@@ -21,3 +21,23 @@ Let's test it normally:
 	stuff?
 	<BLANKLINE>
 
+Let's test it using an integer value:
+	>>> text_indentation(10)
+	Traceback (most recent call last):
+		...
+	TypeError: text must be a string
+
+Let's test it by giving a float value:
+	>>> text_indentation(33.3)
+	Traceback (most recent call last):
+		...
+	TypeError: text must be a string
+
+Let's give it an empty value:
+	>>> text_indentation()
+	Traceback (most recent call last):
+		...
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+
+
