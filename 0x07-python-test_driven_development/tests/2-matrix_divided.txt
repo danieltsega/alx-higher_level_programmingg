@@ -54,7 +54,7 @@ Let's divide it by float number:
 
 Let's divide it by a string:
 	>>> matrix_divided([[1,2,3],[4,5,6]], "dan")
-	Traceback (most recent call back):
+	Traceback (most recent call last):
 		...
 	TypeError: div must be a number
 	
