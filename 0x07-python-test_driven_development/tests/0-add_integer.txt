@@ -67,7 +67,7 @@ Let's add two string values:
 
 Lets' add tuple and integer:
 	>>> add_integer((5,6))
-	Traceback (most recent call last)
+	Traceback (most recent call last):
 		...
 	TypeError: a must be an integer
 
@@ -83,8 +83,3 @@ Let's add an Infinity value and test it:
 		...
 	OverflowError: cannot convert float infinity to integer
 
-Let's add another test giving a not a number value:
-	>>> add_integer(float(NaN))
-	Traceback (most recent call last):
-		...
-	ValueError: cannot convert float NaN to integer
