@@ -65,4 +65,14 @@ Let's add two string values:
 		...
 	TypeError: a must be an integer
 
+Lets' add tuple and integer:
+	>>> add_integer((5,6))
+	Traceback (most recent call last)
+		...
+	TypeError: a must be an integer
 
+Let's add a list and a number:
+	>>> add_integer([4,5,6])
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
