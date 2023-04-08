@@ -83,3 +83,8 @@ Let's add an Infinity value and test it:
 		...
 	OverflowError: cannot convert float infinity to integer
 
+Let's test it giving a NaN value:
+	>>> add_integer(float('NaN'))
+	Traceback (most recent call last):
+		...
+	ValueError: cannot convert float NaN to integer
