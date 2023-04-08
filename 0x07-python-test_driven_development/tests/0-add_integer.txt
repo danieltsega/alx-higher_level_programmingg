@@ -78,8 +78,13 @@ Let's add a list and a number:
 	TypeError: a must be an integer
 
 Let's add an Infinity value and test it:
-	>> add_integer(float('inf'))
+	>>> add_integer(float('inf'))
 	Traceback (most recent call last):
 		...
 	OverflowError: cannot convert float infinity to integer
 
+Let's add another test giving a not a number value:
+	>>> add_integer(float(NaN))
+	Traceback (most recent call last):
+		...
+	ValueError: cannot convert float NaN to integer
