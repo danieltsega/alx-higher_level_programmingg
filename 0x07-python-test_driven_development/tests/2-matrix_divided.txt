@@ -58,3 +58,18 @@ Let's divide it by a string:
 		...
 	TypeError: div must be a number
 	
+Let's give it no argument to the function:
+	>>> matrix_divided()
+	Traceback (most recent call last):
+		...
+	TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+Let's give it only one argument:
+	>>> matrix_divided([[1,2,3],[4,5,6]])
+	Traceback (most recent call last):
+		...
+	TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+Let's give it an infinity value:
+	>>> matrix_divided([[1,2,3],[4,5,6]],float('inf'))
+	[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
