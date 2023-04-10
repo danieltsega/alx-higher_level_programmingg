@@ -1,0 +1,45 @@
+The ``BaseGeometry`` Module
+==============================
+
+Using ``BaseGeometry``
+---------------------
+
+
+
+Let's import the module:
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+Let' check it normally:
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("my_int", 12)
+
+Let's check it with a negative value:
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("my_int", -12)
+	Traceback (most recent call last):
+		...
+	ValueError: my_int must be greater than 0
+
+Let's check it with string value:
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("my_int", '12')
+	Traceback (most recent call last):
+		...
+	TypeError: my_int must be an integer
+
+Let's check it with value of 0:
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("my_int", 0)
+	Traceback (most recent call last):
+		...
+	ValueError: my_int must be greater than 0
+
+Let's check it with empty argument:
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator()
+	Traceback (most recent call last):
+		...
+	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+
