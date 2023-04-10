@@ -7,13 +7,6 @@ class MyList(list):
     list class
     """
 
-    def __init__(self):
-        """An initialized function
-        for the class
-        """
-
-        list.__init__(self)
-
     def print_sorted(self):
         """A method that prints
         a sorted list
