@@ -69,3 +69,10 @@ Lets test it with value None:
         Traceback (most recent call last):
                 ...
         TypeError: age must be an integer
+
+Let's test it with dictionary:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("age", {9,10})
+        Traceback (most recent call last):
+                ...
+        TypeError: age must be an integer
