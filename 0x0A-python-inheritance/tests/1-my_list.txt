@@ -20,4 +20,20 @@ Let's test in the normal case:
 	>>> print(my_list)
 	[1, 4, 2, 3, 5]
 
+Let's test if MyList is a subclass of list:
+	>>> issubclass(MyList, list)
+	True
+
+Let's test our function giving same value:
+	>>> my_list = MyList()
+	>>> my_list.append(2)
+	>>> my_list.append(1)
+	>>> my_list.append(1)
+	>>> my_list.append(0)
+	>>> my_list.append(0)
+	>>> print(my_list)
+	[2, 1, 1, 0, 0]
+	>>> my_list.print_sorted()
+	[0, 0, 1, 1, 2]
+
 
