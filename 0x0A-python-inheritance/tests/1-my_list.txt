@@ -54,4 +54,10 @@ Let's pass a list to the class:
 	>>> my_list.print_sorted()
 	[1, 2, 3, 6]
 
+Let's pass another list:
+	>>> new_list.print_sorted()
+	Traceback (most recent call last):
+		...
+	NameError: name 'new_list' is not defined
+
 
