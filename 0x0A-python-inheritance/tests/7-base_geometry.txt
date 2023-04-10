@@ -62,6 +62,7 @@ Let's test it with tuple:
 	Traceback (most recent call last):
 		...
 	TypeError: my_int must be an integer
+
 Lets test it with value None:
         >>> bg = BaseGeometry()
         >>> bg.integer_validator("age", None)
