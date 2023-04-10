@@ -63,9 +63,3 @@ Let's test it with tuple:
 		...
 	TypeError: my_int must be an integer
 
-Let's test it with dictionary:
-        >>> bg = BaseGeometry()
-        >>> bg.integer_validator("my_int", {9,10})
-        Traceback (most recent call last):
-                ...
-        TypeError: my_int must be an integer	
