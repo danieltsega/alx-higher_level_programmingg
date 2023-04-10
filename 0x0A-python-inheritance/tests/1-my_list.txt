@@ -1,10 +1,10 @@
-The ``1-mylist`` Module
+The ``1-my_list`` Module
 =======================
 
 Using ``MyList``
 
 Let's import the module:
-	>>> MyList = __import__('1-mylist').MyList
+	>>> MyList = __import__('1-my_list').MyList
 
 Let's test in the normal case:
 	>>> my_list = MyList()
