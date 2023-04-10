@@ -90,3 +90,10 @@ Let's test area method by giving value:
     	Traceback (most recent call last):
     	        ...
     	TypeError: area() takes 1 positional argument but 2 were given
+
+Let's test it by giving the area 2 arguments:
+    	>>> bg = BaseGeometry()
+    	>>> bg.area(8, 9)
+    	Traceback (most recent call last):
+    	        ...
+    	TypeError: area() takes 1 positional argument but 3 were given
