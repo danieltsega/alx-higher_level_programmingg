@@ -7,4 +7,4 @@ def lookup(obj):
     the attribute of a class
     """
 
-    return dict(obj)
+    return dir(obj)
