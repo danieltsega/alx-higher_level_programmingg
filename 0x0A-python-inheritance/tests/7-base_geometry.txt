@@ -83,3 +83,10 @@ Let's test the area method:
 	Traceback (most recent call last):
           	...
     	Exception: area() is not implemented
+
+Let's test area method by giving value:
+	>>> bg = BaseGeometry()
+    	>>> bg.area(9)
+    	Traceback (most recent call last):
+    	        ...
+    	TypeError: area() takes 1 positional argument but 2 were given
