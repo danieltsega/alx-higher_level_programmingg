@@ -76,3 +76,10 @@ Let's test it with dictionary:
         Traceback (most recent call last):
                 ...
         TypeError: age must be an integer
+
+Let's test the area method:
+   	>>> bg = BaseGeometry()
+    	>>> bg.area()
+	Traceback (most recent call last):
+          	...
+    	Exception: area() is not implemented
