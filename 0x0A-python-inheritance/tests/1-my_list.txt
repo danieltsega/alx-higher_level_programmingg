@@ -36,4 +36,9 @@ Let's test our function giving same value:
 	>>> my_list.print_sorted()
 	[0, 0, 1, 1, 2]
 
+Let's test it with empty list:
+	>>> my_list = MyList()
+	>>> my_list.print_sorted()
+	[]
+
 
