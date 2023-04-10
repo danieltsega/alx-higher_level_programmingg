@@ -41,4 +41,11 @@ Let's test it with empty list:
 	>>> my_list.print_sorted()
 	[]
 
+Let's test it without an object:
+	>>> my_list = [9, 4, 6, 7]
+	>>> my_list.print_sorted()
+	Traceback (most recent call last):
+		...
+	AttributeError: 'list' object has no attribute 'print_sorted'
+
 
