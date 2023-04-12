@@ -9,6 +9,9 @@ def pascal_triangle(n):
     """
 
     triangle = []
+    if n <= 0:
+        return triangle
+
     for i in range(n):
         t_row = []
 
@@ -26,5 +29,4 @@ def pascal_triangle(n):
 
         triangle.append(t_row)
 
-    for t_row in triangle:
-        print(t_row)
+    return triangle
