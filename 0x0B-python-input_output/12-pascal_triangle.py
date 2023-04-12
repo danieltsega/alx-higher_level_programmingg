@@ -11,7 +11,7 @@ def pascal_triangle(n):
     new_result = []
     me = []
     if n <= 0:
-        return (result)
+        return (new_result)
     for i in range(n):
         if i == 0:
             me.append(1)
