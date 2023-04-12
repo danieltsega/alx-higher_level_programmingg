@@ -8,25 +8,23 @@ def pascal_triangle(n):
     a pascal rectangle
     """
 
-    new_result = []
-    me = []
-    if n <= 0:
-        return (new_result)
+    triangle = []
     for i in range(n):
-        if i == 0:
-            me.append(1)
-            new_result.append(me)
-        elif i == 1:
-            me = me + [1]
-            new_result.append(me)
-        else:
-            new = []
-            new.append(me[0])
-            for j in range(len(me) - 1):
-                sum = 0
-                sum = me[j] + me[j + 1]
-                new.append(sum)
-            new.append(me[-1])
-            me = new
-            new_result.append(me)
-    return (new_result)
+        t_row = []
+
+        for j in range(i + 1):
+            if j == 0 or j == i:
+                element = 1
+
+            else:
+                prev_row = triangle[i - 1]
+                left_elem = prev_row[j - 1]
+                right_elem = prev_row[j]
+                element = left_elem + right_elem
+
+            t_row.append(element)
+
+        triangle.append(t_row)
+
+    for t_row in triangle:
+        print(t_row)
