@@ -96,3 +96,13 @@ class Rectangle(Base):
             rect += ("#" * self.width) + "\n"
 
         print(rect, end="")
+
+    def __str__(self):
+        """A str method"""
+
+        str_cls = "[Rectangle] "
+        str_id = "({}) ".format(self.id)
+        str_xy = "{}/{} ".format(self.x, self.y)
+        str_wihe = "{}/{}".format(self.width, self.height)
+
+        return str_cls + str_id + str_xy + str_wihe
