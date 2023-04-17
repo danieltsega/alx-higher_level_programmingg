@@ -58,3 +58,16 @@ class Base:
             return []
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """A class method that returns
+        all instances
+        """
+
+        if cls.__name__ == "Square":
+            a = cls(5)
+        else:
+            a = cls(5, 5)
+        a.update(**dictionary)
+        return a
