@@ -153,3 +153,19 @@ class TestingSquare(unittest.TestCase):
         self.assertEqual(S.size, 5)
         self.assertEqual(S.x, 4)
         self.assertEqual(S.y, 3)
+
+    def test_instance(self):
+        """A method that tests the
+        instance of the square class
+        """
+
+        S = Square(4)
+        self.assertEqual(True, isinstance(S, Rectangle))
+
+    def test_instance_2(self):
+        """A method that test the
+        instance of the square class
+        """
+
+        S = Square(4)
+        self.assertEqual(True, isinstance(S, Base))
