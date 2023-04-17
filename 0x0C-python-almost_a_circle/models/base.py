@@ -5,6 +5,7 @@
 import json
 import os.path
 
+
 class Base:
     """A base class that is the
     base of all other classes
@@ -18,8 +19,8 @@ class Base:
         if id is not None:
             self.id = id
         else:
-           Base.__nb_objects += 1
-           self.id = Base.__nb_objects
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
 
     @staticmethod
     def to_json_string(list_dictionaries):
