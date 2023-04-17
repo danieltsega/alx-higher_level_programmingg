@@ -134,3 +134,11 @@ class TestingRectangle(unittest.TestCase):
         self.assertEqual(R.height, 3)
         self.assertEqual(R.x, 2)
         self.assertEqual(R.y, 1)
+
+    def test_load(self):
+        """A method to test a load
+        file method
+        """
+
+        load = Rectangle.load_from_file()
+        self.assertEqual(load, [])
