@@ -124,3 +124,32 @@ class TestingSquare(unittest.TestCase):
 
         S = Square(9)
         self.assertEqual(S.area(), 81)
+
+    def test_value(self):
+        """A method that checks
+        for a negative value
+        """
+
+        with self.assertRaises(ValueError):
+            S = Square(-2)
+
+    def test_create_method(self):
+        """A method that tests the create
+        method of the square class
+        """
+
+        dic = {'id': 12}
+        S = Square.create(**dic)
+        self.assertEqual(S.id, 12)
+
+    def test_create_method_2(self):
+        """A method that tests the create
+        method having all argument
+        """
+
+        dic = {'id': 20, 'size': 5, 'x': 4, 'y': 3}
+        S = Square.create(**dic)
+        self.assertEqual(S.id, 20)
+        self.assertEqual(S.size, 5)
+        self.assertEqual(S.x, 4)
+        self.assertEqual(S.y, 3)
