@@ -47,3 +47,14 @@ class Base:
         file_name = "{}.json".format(cls.__name__)
         with open(file_name, 'w') as f:
             f.write(a)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """A static method that returns
+        the json string representation
+        """
+
+        if json_string is None or json_string == "[]":
+            return []
+        else:
+            return json.loads(json_string)
