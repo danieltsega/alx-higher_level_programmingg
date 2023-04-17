@@ -121,3 +121,16 @@ class TestingRectangle(unittest.TestCase):
 
         R = Rectangle(5, 4)
         self.assertEqual(R.area(), 20)
+
+    def test_create_method(self):
+        """A method to test the create
+        method of the rectangle class
+        """
+
+        dic = {'id': 4, 'width': 5, 'height': 3, 'x': 2, 'y': 1}
+        R = Rectangle.create(**dic)
+        self.assertEqual(R.id, 4)
+        self.assertEqual(R.width, 5)
+        self.assertEqual(R.height, 3)
+        self.assertEqual(R.x, 2)
+        self.assertEqual(R.y, 1)
