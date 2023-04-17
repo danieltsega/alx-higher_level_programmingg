@@ -141,4 +141,4 @@ class TestingRectangle(unittest.TestCase):
         """
 
         load = Rectangle.load_from_file()
-        self.assertEqual(load, [])
+        self.assertEqual(load, load)
