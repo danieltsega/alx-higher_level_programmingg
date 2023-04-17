@@ -169,3 +169,11 @@ class TestingSquare(unittest.TestCase):
 
         S = Square(4)
         self.assertEqual(True, isinstance(S, Base))
+
+    def test_load(self):
+        """A method to test the load
+        from a file method
+        """
+
+        load = Square.load_from_file()
+        self.assertEqual(load, load)
