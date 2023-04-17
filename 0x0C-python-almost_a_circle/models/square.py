@@ -15,6 +15,16 @@ class Square(Rectangle):
 
         super().__init__(size, size, x, y, id)
 
+    def __str__(self):
+        """A str method"""
+
+        sq = "[Square] "
+        sq_id = "({}) ".format(self.id)
+        sq_xy = "{}/{} ".format(self.x, self.y)
+        sq_size = "- {}".format(self.size)
+
+        return sq + sq_id + sq_xy + sq_size
+
     @property
     def size(self):
         """A size getter Method"""
