@@ -104,7 +104,7 @@ class Rectangle(Base):
         str_cls = "[Rectangle] "
         str_id = "({}) ".format(self.id)
         str_xy = "{}/{} ".format(self.x, self.y)
-        str_wihe = "{}/{}".format(self.width, self.height)
+        str_wihe = "- {}/{}".format(self.width, self.height)
 
         return str_cls + str_id + str_xy + str_wihe
 
