@@ -117,3 +117,10 @@ class TestingSquare(unittest.TestCase):
 
         with self.assertRaises(TypeError):
             S = Square(4, 5, "3", 4)
+
+    def test_area(self):
+        """A method to test area
+        """
+
+        S = Square(9)
+        self.assertEqual(S.area(), 81)
