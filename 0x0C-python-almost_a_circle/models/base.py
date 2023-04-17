@@ -3,6 +3,7 @@
 
 
 import json
+import os.path
 
 class Base:
     """A base class that is the
@@ -71,3 +72,23 @@ class Base:
             a = cls(5, 5)
         a.update(**dictionary)
         return a
+
+    @classmethod
+    def load_from_file(cls):
+        """A class method that returns
+        list of instances
+        """
+
+        file_name = "{}.json".format(cls.__name__)
+        if os.path.exists(file_name) is False:
+            return []
+        else:
+            with open(file_name, 'r') as f:
+                str_list = f.read()
+
+            cls_list = cls.from_json_string(str_list)
+            new_list = []
+
+            for i in range(len(cls_list)):
+                new_list.append(cls.create(**cls_list[i]))
+            return new_list
