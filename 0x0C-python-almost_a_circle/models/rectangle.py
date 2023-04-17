@@ -107,3 +107,10 @@ class Rectangle(Base):
         str_wihe = "{}/{}".format(self.width, self.height)
 
         return str_cls + str_id + str_xy + str_wihe
+
+    def update(self, *args):
+        """An Update Method"""
+
+        attr = ['id', 'width', 'height', 'x', 'y']
+        for i in range(len(args)):
+            setattr(self, attr[i], args[i])
